@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk add --update nodejs npm
+RUN apk add --update nodejs npm git curl
 
 RUN addgroup -S node && adduser -S node -G node
 
