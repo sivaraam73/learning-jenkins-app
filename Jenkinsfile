@@ -6,7 +6,7 @@ pipeline {
         stage('Build') {
             
             agent{
-               docker{}
+               docker{
                 dockerfile true
                 reuseNode true
             }
