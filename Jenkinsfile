@@ -6,7 +6,11 @@ pipeline {
         stage('Build') {
             
             agent{
-                label 'docker-agent1' 
+               docker {
+                image 'node:18-alpine'
+                reuseNode true
+
+               }
             }
         
         steps{
